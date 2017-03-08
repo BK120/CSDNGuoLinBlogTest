@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="200dp"
+    android:background="@drawable/float_shape"
+    android:id="@+id/big_window_layout"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/close"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:text="关闭悬浮窗"
+        android:layout_weight="1"
+        android:background="@drawable/btn_shapw"
+        />
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="音乐"
+            android:background="@drawable/btn_shapw"
+            android:id="@+id/music"
+
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@drawable/btn_shapw"
+            android:text="电影"
+            android:id="@+id/moive"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/back"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:text="返回"
+        android:background="@drawable/btn_shapw"
+        />
+</LinearLayout>
