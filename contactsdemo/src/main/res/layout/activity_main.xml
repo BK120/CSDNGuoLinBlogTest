@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#03FA39"
+    tools:context="com.bk120.contactsdemo.MainActivity">
+    <ListView
+        android:id="@+id/mainactivity_listview"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:layout_width="match_parent"
+        />
+    <LinearLayout
+        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/title_layout"
+        android:background="#303030"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#f00"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_height="match_parent"
+        android:layout_width="30dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/alphabetButton"
+        android:text="A\nB\nC\nD\nE\nF\nG\nH\nI\nG\nK\nL\nM\nN\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ\n#"
+        android:textColor="#00f"
+        android:background="#00000000"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:textSize="17sp"
+        />
+    <RelativeLayout
+        android:id="@+id/section_toast_layout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:background="#facd89"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/section_toast_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
